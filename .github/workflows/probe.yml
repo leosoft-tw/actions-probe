@@ -1,0 +1,11 @@
+name: probe
+on: [push, workflow_dispatch]
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello linux
+  windows:
+    runs-on: windows-latest
+    steps:
+      - run: echo hello windows
